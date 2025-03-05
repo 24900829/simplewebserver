@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date: 09/02/2025
+## Date: 05/03/2025
 
 ## AIM:
 To develop a simple webserver to serve html pages.
@@ -22,13 +22,10 @@ Testing the webserver.
 
 ## PROGRAM:
 ```
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>Praveen (23009864) </title>
+<title>kavibharathi (212224220045) </title>
 </head>
 <body>
 <h1><u>Revenue generating companies</u><h1>
@@ -40,25 +37,15 @@ content = """
 <li>Google</li>
 </ul>
 
-Done by Madhu Mitra (2100487)
+Done by kavibharathi k (212224220045)
 
 </body>
 </html>
-"""
-class myhandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("request received")
-        self.send_response(200)
-        self.send_header('content-type', 'text/html; charset=utf-8')
-        self.end_headers()
-        self.wfile.write(content.encode())
-server_address = ('',8000)
-httpd = HTTPServer(server_address,myhandler)
-print("my webserver is running...")
-httpd.serve_forever()
+
 ```
-## OUTPUT:
-![Screenshot 2023-10-21 084059](https://github.com/praveenck23009864/simplewebserver/assets/141472050/ca5868ef-d311-46c1-82ad-e5826a8e8040)
+## OUTPUT: ![Screenshot 2025-03-05 110340](https://github.com/user-attachments/assets/96dbab1d-8783-4e2d-b4a6-74bcb2fff545)
+
+
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
